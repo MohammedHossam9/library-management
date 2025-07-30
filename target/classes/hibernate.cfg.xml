@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://db:3306/library_db</property>
+        <property name="hibernate.connection.username">library_user</property>
+        <property name="hibernate.connection.password">510124</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="show_sql">true</property>
+        <!-- Entity mappings -->
+        <mapping class="models.Book"/>
+        <mapping class="models.User"/>
+        <mapping class="models.Admin"/>
+        <mapping class="models.RegularUser"/>
+    </session-factory>
+</hibernate-configuration>
