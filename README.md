@@ -22,17 +22,12 @@ The application consists of three containers:
    cd library-ejada
    ```
 
-2. **Set up environment variables:**
-   ```
-   create .env file with default values below
-   ```
-   
-3. **Build and run the application:**
+2. **Build and run the application:**
    ```bash
    docker-compose up --build
    ```
 
-4. **Access the application:**
+3. **Access the application:**
    - **Console Application**: The Java app will start in interactive mode
    - **Adminer (Database Admin)**: Open http://localhost:8080 in your browser
      - System: MySQL
