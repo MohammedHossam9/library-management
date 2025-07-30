@@ -38,7 +38,7 @@ The application consists of three containers:
      - System: MySQL
      - Server: db
      - Username: library_user
-     - Password: library123
+     - Password: 510124
      - Database: library_db
 
 ##  Environment Variables
